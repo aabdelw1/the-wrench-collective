@@ -1,0 +1,110 @@
+/* AboutPage.css */
+.page {
+  min-height: 100vh;
+  background: rgb(28, 28, 28);
+  color: white;
+}
+
+.page-content {
+  padding-top: 80px; /* Account for navbar */
+}
+
+.about-hero {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-image {
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(50, 50, 50, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-copy {
+  color: white;
+}
+
+.about-copy h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  color: white;
+}
+
+.about-copy p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+.about-copy p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-image {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding-top: 60px;
+  }
+
+  .about-hero {
+    padding: 60px 20px;
+  }
+
+  .about-copy h1 {
+    font-size: 2rem;
+  }
+
+  .about-copy p {
+    font-size: 1.1rem;
+  }
+
+  .about-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-copy h1 {
+    font-size: 1.75rem;
+  }
+
+  .about-copy p {
+    font-size: 1rem;
+  }
+
+  .about-image {
+    height: 300px;
+  }
+}

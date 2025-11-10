@@ -1,0 +1,253 @@
+/* BookingPage.css */
+
+.page {
+  min-height: 100vh;
+  background: rgb(28, 28, 28);
+  color: white;
+}
+
+.page-content {
+  padding-top: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+}
+
+/* Hero Section */
+.book-hero {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(50, 50, 50, 0.5);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-hero img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Buffer Message */
+.book-buffer {
+  margin: 40px 0 30px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ddd;
+}
+
+/* Simple List of Offerings */
+.book-simple-list {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+.book-simple-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-simple-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.book-simple-row:last-of-type {
+  border-bottom: none;
+}
+
+.book-simple-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.book-simple-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.book-simple-note {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e74c3c;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.book-simple-note:hover {
+  color: #c0392b;
+}
+
+.book-simple-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Service Menu Section */
+.book-menu {
+  max-width: 1200px;
+  margin: 80px auto 60px;
+}
+
+.book-menu-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.book-menu-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  margin: 0;
+}
+
+.book-menu-pill {
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #bbb;
+  background: rgba(50, 50, 50, 0.3);
+}
+
+.book-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.book-menu-card {
+  background: rgba(50, 50, 50, 0.5);
+  border-radius: 10px;
+  padding: 40px 35px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  text-align: center;
+}
+
+.book-menu-card:hover {
+  transform: translateY(-10px);
+  border-color: #e74c3c;
+}
+
+.book-menu-card h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  margin: 0 0 20px 0;
+}
+
+.book-menu-rate {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.book-menu-rate-main {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.book-menu-rate-unit {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+.book-menu-card p {
+  font-size: 1rem;
+  color: #bbb;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.book-menu-note {
+  margin-top: 20px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 2px solid #e74c3c;
+  background: rgba(231, 76, 60, 0.1);
+  font-size: 1rem;
+  text-align: center;
+  color: #ddd;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+  .book-menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-simple-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .book-simple-price {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding-top: 60px;
+  }
+
+  .book-hero {
+    height: 300px;
+  }
+
+  .book-menu-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .book-menu-header h2 {
+    font-size: 2rem;
+  }
+
+  .book-simple-name {
+    font-size: 1.1rem;
+  }
+
+  .book-simple-price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-menu-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .book-menu-rate-main {
+    font-size: 2rem;
+  }
+}
