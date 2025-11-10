@@ -1,0 +1,113 @@
+/* Location & Hours Section */
+.location-section {
+  padding: 60px 20px;
+  background: rgb(28, 28, 28);
+}
+
+.location-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.location-map {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(50, 50, 50, 0.5);
+}
+
+.location-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.location-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  max-height: 500px;
+}
+
+.location-details h2 {
+  font-size: 2rem;
+  margin: 0 0 15px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.location-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.location-details p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 5px;
+}
+
+.location-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #e74c3c;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.location-link:hover {
+  color: #c0392b;
+}
+
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hours-row:last-child {
+  border-bottom: none;
+}
+
+.hours-row dt {
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+}
+
+.hours-row dd {
+  margin: 0;
+  color: #bbb;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .location-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .location-map {
+    height: 400px;
+  }
+}
