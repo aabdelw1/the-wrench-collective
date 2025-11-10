@@ -7,7 +7,10 @@ const NavBar: React.FC = () => {
     <nav className="navbar">
       <div className="nav-container">
         <div className="nav-logo">
-          <h2>The Wrench</h2>
+          <Link to="/" className="logo-text">
+            <h2>The Wrench</h2>
+            <span className="collective-text">collective</span>
+          </Link>
         </div>
         <ul className="nav-menu">
           <li className="nav-item">
