@@ -2,6 +2,18 @@ import React from 'react';
 import './PricingSection.css';
 
 const PricingSection: React.FC = () => {
+  const handleTwoPostLiftBooking = () => {
+    window.open('https://book.squareup.com/appointments/b4uvfmnrs13wm8/location/L7722XRFA5036/services/OODHNYDNQFPSTI5IYFQG2NOD', '_blank');
+  };
+
+  const handleQuickJackBooking = () => {
+    window.open('https://book.squareup.com/appointments/b4uvfmnrs13wm8/location/L7722XRFA5036/services/UHJ4U4B6LY4NHVAY33AUGL3K', '_blank');
+  };
+
+  const handleOilChangeBooking = () => {
+    window.open('https://book.squareup.com/appointments/b4uvfmnrs13wm8/location/L7722XRFA5036/services/4R6CT5QJ4ONGJAVFZQZLNLON', '_blank');
+  };
+
   return (
     <section className="pricing-section">
       <h2 className="pricing-title">JOIN THE COLLECTIVE</h2>
@@ -13,7 +25,7 @@ const PricingSection: React.FC = () => {
           </p>
           <h4 className="pricing-rate">$35/HR</h4>
           <p className="pricing-minimum">(2 HOUR MINIMUM)</p>
-          <button className="pricing-button">BOOK NOW</button>
+          <button className="pricing-button" onClick={handleTwoPostLiftBooking}>BOOK NOW</button>
         </div>
 
         <div className="pricing-card">
@@ -23,7 +35,7 @@ const PricingSection: React.FC = () => {
           </p>
           <h4 className="pricing-rate">$25/HR</h4>
           <p className="pricing-minimum">(2 HOUR MINIMUM)</p>
-          <button className="pricing-button">BOOK NOW</button>
+          <button className="pricing-button" onClick={handleQuickJackBooking}>BOOK NOW</button>
         </div>
 
         <div className="pricing-card">
@@ -33,7 +45,7 @@ const PricingSection: React.FC = () => {
           </p>
           <h4 className="pricing-rate">$45/VISIT</h4>
           <p className="pricing-minimum">(1 HOUR ONLY)</p>
-          <button className="pricing-button">BOOK NOW</button>
+          <button className="pricing-button" onClick={handleOilChangeBooking}>BOOK NOW</button>
         </div>
       </div>
     </section>

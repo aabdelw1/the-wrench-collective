@@ -40,8 +40,9 @@ const LocationSection: React.FC = () => {
           <div className="location-details">
             <h2>Location & Hours</h2>
             <p className="location-name">The Wrench Collective</p>
-            <p>307 Glenrose Ave</p>
-            <p>Nashville, Tennessee 37210</p>
+            <p>
+              307 Glenrose Ave, Nashville, Tennessee 37210
+            </p>
             <a
               className="location-link"
               href="https://www.google.com/maps/search/?api=1&query=307+Glenrose+Ave,+Nashville,+TN+37210"

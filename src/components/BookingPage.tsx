@@ -6,6 +6,7 @@ type SimpleService = {
   name: string;
   note: string;
   price: string;
+  bookingUrl: string;
 };
 
 const simpleServices: SimpleService[] = [
@@ -13,16 +14,19 @@ const simpleServices: SimpleService[] = [
     name: "Oil Change Special - 1 HOUR ONLY",
     note: "CLICK HERE TO BOOK",
     price: "$45",
+    bookingUrl: "https://book.squareup.com/appointments/b4uvfmnrs13wm8/location/L7722XRFA5036/services/4R6CT5QJ4ONGJAVFZQZLNLON",
   },
   {
     name: "2 Post Lift Rental",
     note: "CLICK HERE TO BOOK",
     price: "$70.00+",
+    bookingUrl: "https://book.squareup.com/appointments/b4uvfmnrs13wm8/location/L7722XRFA5036/services/OODHNYDNQFPSTI5IYFQG2NOD",
   },
   {
     name: "Quick Jacks Rental",
     note: "CLICK HERE TO BOOK",
     price: "$50.00+",
+    bookingUrl: "https://book.squareup.com/appointments/b4uvfmnrs13wm8/location/L7722XRFA5036/services/UHJ4U4B6LY4NHVAY33AUGL3K",
   },
 ];
 
@@ -31,6 +35,7 @@ type MenuItem = {
   rate: string;
   unit: string;
   description: string;
+  bookingUrl: string;
 };
 
 const menuItems: MenuItem[] = [
@@ -39,6 +44,7 @@ const menuItems: MenuItem[] = [
     rate: "$35",
     unit: "/hr",
     description: "Perfect for all services requiring full under-car access.",
+    bookingUrl: "https://book.squareup.com/appointments/b4uvfmnrs13wm8/location/L7722XRFA5036/services/OODHNYDNQFPSTI5IYFQG2NOD",
   },
   {
     title: "Quick Jacks — Hourly",
@@ -46,6 +52,7 @@ const menuItems: MenuItem[] = [
     unit: "/hr",
     description:
       "Great for quick jobs, such as brakes, suspension, and tire rotations.",
+    bookingUrl: "https://book.squareup.com/appointments/b4uvfmnrs13wm8/location/L7722XRFA5036/services/UHJ4U4B6LY4NHVAY33AUGL3K",
   },
 ];
 
@@ -75,7 +82,12 @@ const BookingPage: React.FC = () => {
               <li key={service.name} className="book-simple-row">
                 <div className="book-simple-text">
                   <span className="book-simple-name">{service.name}</span>
-                  <span className="book-simple-note">{service.note}</span>
+                  <span
+                    className="book-simple-note"
+                    onClick={() => window.open(service.bookingUrl, '_blank')}
+                  >
+                    {service.note}
+                  </span>
                 </div>
                 <span className="book-simple-price">{service.price}</span>
               </li>
@@ -92,7 +104,12 @@ const BookingPage: React.FC = () => {
 
           <div className="book-menu-grid">
             {menuItems.map((item) => (
-              <article key={item.title} className="book-menu-card">
+              <article
+                key={item.title}
+                className="book-menu-card"
+                onClick={() => window.open(item.bookingUrl, '_blank')}
+                style={{ cursor: 'pointer' }}
+              >
                 <h3>{item.title}</h3>
                 <div className="book-menu-rate">
                   <span className="book-menu-rate-main">{item.rate}</span>
