@@ -42,15 +42,15 @@ const MembershipPerks: React.FC = () => {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'ArrowRight') {
-        nextSlide();
+        setCurrentSlide((prev) => (prev + 1) % perks.length);
       } else if (event.key === 'ArrowLeft') {
-        prevSlide();
+        setCurrentSlide((prev) => (prev - 1 + perks.length) % perks.length);
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
+  }, [perks.length]);
 
   return (
     <section className="membership-perks">
