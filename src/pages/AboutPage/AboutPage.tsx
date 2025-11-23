@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutPage.css";
+import yamanImage from "../../assets/images/yaman.JPG";
 
 const AboutPage: React.FC = () => {
   return (
@@ -7,9 +8,8 @@ const AboutPage: React.FC = () => {
       <main className="page-content">
         <section className="about-hero">
           <div className="about-image">
-            {/* Replace with your real image path */}
             <img
-              src="/images/about-garage.jpg"
+              src={yamanImage}
               alt="Members working under a car at The Wrench Collective"
             />
           </div>
