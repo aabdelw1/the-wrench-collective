@@ -8,7 +8,12 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="hero-section" style={{ backgroundImage: `url(${warehouseImage})` }}>
+    <section className="hero-section">
+      <img
+        src={warehouseImage}
+        alt="Professional car lift rental Nashville - DIY auto garage workspace at The Wrench Collective"
+        className="hero-background-image"
+      />
       <div className="hero-overlay">
         <h1 className="hero-title">Need to work on your car? Look no further.</h1>
         <button className="cta-button" onClick={handleBooking}>BOOK NOW</button>

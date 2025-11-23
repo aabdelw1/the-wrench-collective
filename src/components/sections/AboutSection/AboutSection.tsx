@@ -6,7 +6,12 @@ const AboutSection: React.FC = () => {
   return (
     <section className="about-section">
       <div className="about-container">
-        <div className="about-image" style={{ backgroundImage: `url(${infinitiImage})`}}>
+        <div className="about-image">
+          <img
+            src={infinitiImage}
+            alt="Car enthusiast working on Infiniti at Nashville DIY auto garage"
+            className="about-background-image"
+          />
         </div>
         <div className="about-content">
           <h2 className="about-title">BUILT BY CAR LOVERS, FOR CAR LOVERS</h2>

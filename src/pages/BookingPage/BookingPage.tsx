@@ -1,5 +1,6 @@
 import React from "react";
 import "./BookingPage.css";
+import SEO from "../../components/SEO/SEO";
 import LocationSection from "../../components/sections/LocationSection/LocationSection";
 
 type SimpleService = {
@@ -59,6 +60,14 @@ const menuItems: MenuItem[] = [
 const BookingPage: React.FC = () => {
   return (
     <div className="page">
+      <SEO
+        title="Book Now | Rent a Car Lift in Nashville | The Wrench Collective"
+        description="Book your DIY auto garage bay in Nashville. Rent professional 2-post lifts or Quick Jacks by the hour. Oil change specials available. Reserve online now."
+        keywords="book car lift nashville, reserve auto bay nashville, car lift rental booking, nashville auto garage reservation, rent car lift online nashville"
+        ogTitle="Book Your Car Lift Rental | The Wrench Collective Nashville"
+        ogDescription="Reserve your professional car lift or garage bay rental in Nashville. Hourly rates starting at $25."
+        canonicalUrl="https://www.thewrenchcollective.com/booking"
+      />
       <main className="page-content">
 
         {/* HERO IMAGE */}
@@ -66,7 +75,7 @@ const BookingPage: React.FC = () => {
           {/* Replace with your real hero image path */}
           <img
             src="/images/hero-wrench.jpg"
-            alt="The Wrench Collective banner"
+            alt="Nashville car lift rental facility at The Wrench Collective DIY auto garage"
           />
         </section>
 

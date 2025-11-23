@@ -2,31 +2,23 @@
   position: relative;
   width: 100%;
   height: 600px;
-
-  /* Background image now set via inline style in component */
-
-  /* ✅ Keep these for sizing/positioning */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  /* ❌ REMOVE this line, it overwrote the background image
-  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 50%, #1a1a1a 100%);
-  */
-
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
-.hero-section::before {
-  content: '';
+.hero-background-image {
   position: absolute;
-  inset: 0;
-  /* this is your dark overlay now */
-  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
 }
+
 .hero-section::before {
   content: '';
   position: absolute;
@@ -35,11 +27,12 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .hero-overlay {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
   padding: 0 20px;
 }
