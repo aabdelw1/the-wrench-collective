@@ -1,5 +1,6 @@
 import React from 'react';
 import './HeroSection.css';
+import warehouseImage from '../../../assets/images/warehouse.JPG';
 
 const HeroSection: React.FC = () => {
   const handleBooking = () => {
@@ -7,7 +8,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="hero-section">
+    <section className="hero-section" style={{ backgroundImage: `url(${warehouseImage})` }}>
       <div className="hero-overlay">
         <h1 className="hero-title">Need to work on your car? Look no further.</h1>
         <button className="cta-button" onClick={handleBooking}>BOOK NOW</button>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./BookingPage.css";
-import LocationSection from "./sections/LocationSection";
+import LocationSection from "../../components/sections/LocationSection/LocationSection";
 
 type SimpleService = {
   name: string;

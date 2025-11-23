@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/MembershipPerks.css';
+import './MembershipPerks.css';
 
 const MembershipPerks: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

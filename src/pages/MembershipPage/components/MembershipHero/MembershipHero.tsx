@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/MembershipHero.css';
+import './MembershipHero.css';
 
 const MembershipHero: React.FC = () => {
   return (
