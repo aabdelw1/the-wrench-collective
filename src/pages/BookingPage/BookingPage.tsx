@@ -2,6 +2,7 @@ import React from "react";
 import "./BookingPage.css";
 import SEO from "../../components/SEO/SEO";
 import LocationSection from "../../components/sections/LocationSection/LocationSection";
+import benzImage from "../../assets/benz.png";
 
 type SimpleService = {
   name: string;
@@ -74,7 +75,7 @@ const BookingPage: React.FC = () => {
         <section className="book-hero">
           {/* Replace with your real hero image path */}
           <img
-            src="/images/hero-wrench.jpg"
+            src={benzImage}
             alt="Nashville car lift rental facility at The Wrench Collective DIY auto garage"
           />
         </section>

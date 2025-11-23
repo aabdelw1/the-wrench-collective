@@ -31,10 +31,10 @@ const FeaturesSection: React.FC = () => {
         <div className="feature-card">
           <div className="feature-icon">
             <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-              <circle cx="12" cy="12" r="10"></circle>
-              <path d="M16 8v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2z"></path>
-              <path d="M9 22V12h6v10"></path>
+              <path d="M5 11a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2"></path>
+              <path d="M6 10h12l1.5-4.5A2 2 0 0 0 17.5 3h-11A2 2 0 0 0 4.5 5.5z"></path>
+              <circle cx="7" cy="17" r="2"></circle>
+              <circle cx="17" cy="17" r="2"></circle>
             </svg>
           </div>
           <h3 className="feature-title">AFFORDABLE ACCESS</h3>

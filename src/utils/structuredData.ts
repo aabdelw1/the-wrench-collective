@@ -7,7 +7,7 @@ export const localBusinessSchema = {
   "image": "https://www.thewrenchcollective.com/images/hero-wrench.jpg",
   "description": "Professional DIY automotive workspace rental in Nashville, TN. Rent car lifts, work bays, and tools by the hour. Safe, clean, fully equipped auto garage.",
   "url": "https://www.thewrenchcollective.com",
-  "telephone": "+1-XXX-XXX-XXXX", // TODO: Add actual phone number
+  "telephone": "+1-615-609-4787", 
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "307 Glenrose Ave",
