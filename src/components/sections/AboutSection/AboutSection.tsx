@@ -1,17 +1,12 @@
 import React from 'react';
 import './AboutSection.css';
+import infinitiImage from '../../../assets/images/infiniti.jpg';
 
 const AboutSection: React.FC = () => {
   return (
     <section className="about-section">
       <div className="about-container">
-        <div className="about-image">
-          <div className="image-placeholder">
-            {/* Placeholder for Infiniti image - Add your image to /public/images/infiniti.jpg */}
-            <div style={{color: '#666', fontSize: '1.2rem', textAlign: 'center'}}>
-              Infiniti Image<br/>Placeholder
-            </div>
-          </div>
+        <div className="about-image" style={{ backgroundImage: `url(${infinitiImage})`}}>
         </div>
         <div className="about-content">
           <h2 className="about-title">BUILT BY CAR LOVERS, FOR CAR LOVERS</h2>
