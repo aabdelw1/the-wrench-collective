@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.95c2ab4f.css",
-    "main.js": "/static/js/main.263ba75a.js",
+    "main.js": "/static/js/main.c19b4a7e.js",
     "static/js/453.0b1cf194.chunk.js": "/static/js/453.0b1cf194.chunk.js",
     "static/media/benz.png": "/static/media/benz.feb4e7219a1b23f40b4d.png",
     "static/media/infiniti.jpg": "/static/media/infiniti.d5fc0715e14f11b92c4d.jpg",
@@ -9,11 +9,11 @@
     "static/media/yaman.JPG": "/static/media/yaman.d9967a80edef9c0b80de.JPG",
     "index.html": "/index.html",
     "main.95c2ab4f.css.map": "/static/css/main.95c2ab4f.css.map",
-    "main.263ba75a.js.map": "/static/js/main.263ba75a.js.map",
+    "main.c19b4a7e.js.map": "/static/js/main.c19b4a7e.js.map",
     "453.0b1cf194.chunk.js.map": "/static/js/453.0b1cf194.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.95c2ab4f.css",
-    "static/js/main.263ba75a.js"
+    "static/js/main.c19b4a7e.js"
   ]
 }
