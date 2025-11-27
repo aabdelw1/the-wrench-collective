@@ -17,10 +17,10 @@ interface SEOProps {
 const SEO: React.FC<SEOProps> = ({
   title = 'Car Lift Rental Nashville | DIY Auto Garage | The Wrench Collective',
   description = 'Rent a car lift or garage bay in Nashville. Safe, clean, fully equipped DIY auto shop with free tools. Book online at The Wrench Collective.',
-  keywords = 'car lift rental nashville, diy auto shop nashville, rent a car lift nashville, auto bay rental nashville, diy garage nashville, self service auto repair nashville, nashville car lift, mechanic garage rental nashville',
+  keywords = 'car lift rental nashville, diy auto shop nashville, rent a car lift nashville, auto bay rental nashville, diy garage nashville, self service auto repair nashville, nashville car lift, mechanic garage rental nashville, work on my car nashville, ',
   ogTitle,
   ogDescription,
-  ogImage = 'https://www.thewrenchcollective.com/images/hero-wrench.jpg',
+  ogImage = 'https://www.thewrenchcollective.com/twc_logo.png',
   ogType = 'website',
   twitterCard = 'summary_large_image',
   canonicalUrl,
