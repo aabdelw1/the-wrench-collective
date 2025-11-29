@@ -25,7 +25,7 @@ const LocationSection: React.FC = () => {
         <div className="location-map">
           {/* Embedded Google Maps */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.2!2d-86.7!3d36.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDA2JzAwLjAiTiA4NsKwNDInMDAuMCJX!5e0!3m2!1sen!2sus!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.195!2d-86.7494568!3d36.1253609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864659d81ff3e6d%3A0x56cb26d4018100c5!2sThe%20Wrench%20Collective!5e0!3m2!1sen!2sus!4v1234567890"
             width="100%"
             height="100%"
             style={{ border: 0 }}
