@@ -6,7 +6,7 @@
 }
 
 .page-content {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .about-hero {
@@ -78,11 +78,11 @@
 
 @media (max-width: 768px) {
   .page-content {
-    padding-top: 60px;
+    padding-top: 15px;
   }
 
   .about-hero {
-    padding: 60px 20px;
+    padding: 20px 20px;
   }
 
   .about-copy h1 {

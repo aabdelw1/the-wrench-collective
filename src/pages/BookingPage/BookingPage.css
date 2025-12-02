@@ -7,7 +7,7 @@
 }
 
 .page-content {
-  /* padding-top: 80px; */
+  padding-top: 40px;
   max-width: 1400px;
   margin: 0 auto;
   padding-left: 20px;
@@ -18,7 +18,7 @@
 /* Hero Section */
 .book-hero {
   /* margin-top: 20px; */
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   border-radius: 10px;
   /* overflow: hidden; */
   background: rgba(50, 50, 50, 0.5);
@@ -38,7 +38,7 @@
 
 /* Buffer Message */
 .book-buffer {
-  margin: 40px 0 30px;
+  margin: 10px 0 30px;
   text-align: center;
   font-size: 1.1rem;
   font-weight: 600;
@@ -220,11 +220,15 @@
 
 @media (max-width: 768px) {
   .page-content {
-    padding-top: 60px;
+    padding-top: 15px;
   }
 
   .book-hero {
     display: none;
+  }
+
+  .book-buffer {
+    margin: 15px 0 20px;
   }
 
   .book-menu-header {
