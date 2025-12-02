@@ -1,14 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 const NavBar: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="nav-container">
         <div className="nav-left">
-          <Link to="/booking" className="nav-link">Book</Link>
-          <Link to="/about" className="nav-link">About</Link>
+          <button
+            className="hamburger-button"
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              {isMenuOpen ? (
+                <>
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </>
+              ) : (
+                <>
+                  <line x1="3" y1="12" x2="21" y2="12"></line>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <line x1="3" y1="18" x2="21" y2="18"></line>
+                </>
+              )}
+            </svg>
+          </button>
+          <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+            <Link to="/booking" className="nav-link" onClick={closeMenu}>Book</Link>
+            <Link to="/about" className="nav-link" onClick={closeMenu}>About</Link>
+          </div>
         </div>
 
         <div className="nav-logo">
