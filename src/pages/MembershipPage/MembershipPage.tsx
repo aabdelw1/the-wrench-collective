@@ -4,6 +4,7 @@ import MembershipHero from './components/MembershipHero/MembershipHero';
 import MembershipTiers from './components/MembershipTiers/MembershipTiers';
 import MembershipPerks from './components/MembershipPerks/MembershipPerks';
 import MembershipSummary from './components/MembershipSummary/MembershipSummary';
+import Footer from '../../components/shared/Footer/Footer';
 import './MembershipPage.css';
 
 const MembershipPage: React.FC = () => {
@@ -21,6 +22,7 @@ const MembershipPage: React.FC = () => {
       <MembershipTiers />
       <MembershipPerks />
       <MembershipSummary />
+      <Footer />
     </div>
   );
 };

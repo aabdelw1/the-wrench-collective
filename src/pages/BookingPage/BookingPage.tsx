@@ -2,6 +2,7 @@ import React from "react";
 import "./BookingPage.css";
 import SEO from "../../components/SEO/SEO";
 import LocationSection from "../../components/sections/LocationSection/LocationSection";
+import Footer from "../../components/shared/Footer/Footer";
 import benzImage from "../../assets/benz.png";
 
 type SimpleService = {
@@ -138,6 +139,7 @@ const BookingPage: React.FC = () => {
         {/* LOCATION & HOURS (reuse existing section) */}
         <LocationSection />
       </main>
+      <Footer />
     </div>
   );
 };

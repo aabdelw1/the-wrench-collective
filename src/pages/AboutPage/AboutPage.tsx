@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutPage.css";
 import SEO from "../../components/SEO/SEO";
+import Footer from "../../components/shared/Footer/Footer";
 import yamanImage from "../../assets/images/yaman.JPG";
 
 const AboutPage: React.FC = () => {
@@ -45,6 +46,7 @@ const AboutPage: React.FC = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };

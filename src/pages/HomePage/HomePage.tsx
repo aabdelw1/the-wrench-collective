@@ -7,6 +7,7 @@ import AboutSection from '../../components/sections/AboutSection/AboutSection';
 import PricingSection from '../../components/sections/PricingSection/PricingSection';
 import FAQSection from '../../components/sections/FAQSection/FAQSection';
 import LocationSection from '../../components/sections/LocationSection/LocationSection';
+import Footer from '../../components/shared/Footer/Footer';
 import { localBusinessSchema, organizationSchema, faqSchema } from '../../utils/structuredData';
 
 const HomePage: React.FC = () => {
@@ -37,6 +38,7 @@ const HomePage: React.FC = () => {
       <PricingSection />
       <FAQSection />
       <LocationSection />
+      <Footer />
     </div>
   );
 };
